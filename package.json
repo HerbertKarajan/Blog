@@ -4,9 +4,9 @@
   "description": "Blog",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "publish": "deploy.sh"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:publish": "GH=1 yarn docs:build && bash deploy.sh"
   },
   "author": "Karajan",
   "license": "ISC",

@@ -1,6 +1,6 @@
 const utils = require('./utils')
 module.exports = {
-  // base:"/Blog/",
+  base:"/Blog/",
   title: 'Karajan\'s Log',
   description: 'Karajan\'s Log',
   head: [
@@ -31,7 +31,7 @@ module.exports = {
     //   ]
     // },
     // 假定 GitHub。也可以是一个完整的 GitLab 网址
-    repo: 'https://github.com/gomeDesign/Blog',
+    repo: 'https://github.com/HerbertKarajan/Blog',
     // 如果你的文档不在仓库的根部
     docsDir: 'docs',
     // 可选，默认为 master
