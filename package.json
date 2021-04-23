@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "Blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "publish": "deploy.sh"
+  },
+  "author": "Karajan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "2",
+    "element-ui": "^2.13.0",
+    "vuepress": "^1.2.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-nprogress": "^1.2.0"
+  }
+}
