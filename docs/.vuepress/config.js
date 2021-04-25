@@ -1,8 +1,8 @@
 const utils = require('./utils')
 module.exports = {
   base:"/Blog/",
-  title: 'Karajan\'s Log',
-  description: 'Karajan\'s Log',
+  title: 'Karajan\'s Blog',
+  description: 'Karajan\'s Blog',
   head: [
     ['link', { rel: 'icon', href: `https://github.githubassets.com/favicon.ico` }]
   ],
