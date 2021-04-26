@@ -9,10 +9,10 @@
 SPDY目的是解决HTTP的性能瓶颈，缩短Web页面的加载时间。
 
 ### 2.1 HTTP的瓶颈
-![以前HTTP通信](/images/HTTP图解/9以前HTTP通信.png)  
+![以前HTTP通信](/Blog/images/HTTP图解/9以前HTTP通信.png)  
  
 - Ajax的解决方法  
-![Ajax通信](/images/HTTP图解/9Ajax通信.png)  
+![Ajax通信](/Blog/images/HTTP图解/9Ajax通信.png)  
 利用Ajax实时的从服务器获取内容，有可能会导致大量请求产生。
 
 - Comet的解决方法   
@@ -21,11 +21,11 @@ SPDY目的是解决HTTP的性能瓶颈，缩短Web页面的加载时间。
 通常，服务器端接收到请求，在处理完毕后就会立即返回响应，但为了实现推送功能，Comet会先将响应置于挂起状态，当服务器端有内容更新时，再返回该响应。
 
 内容上虽然做到了实时更新，但为了保留响应，一次连接的持续时间也变长了，为了维持连接会消耗更多的资源。
-![Comet通信](/images/HTTP图解/9Comet通信.png)  
+![Comet通信](/Blog/images/HTTP图解/9Comet通信.png)  
 
 ### 2.2 SPDY的设计与功能
 SPDY没有完全改写HTTP协议，而是在TCP/IP的应用层与传输层间通过新加会话层的形式运作。考虑到安全性问题，SPDY规定通信中使用SSL。   
-![SPDY的设计](/images/HTTP图解/9SPDY的设计.png)  
+![SPDY的设计](/Blog/images/HTTP图解/9SPDY的设计.png)  
 使用SPDY后，HTTP协议额外获得以下功能：  
 - 多路复用流  
 通过单一的TCP连接，可以无限制处理多个HTTP请求。因此TCP的处理效率得到提高。
@@ -65,13 +65,13 @@ WebSocket协议的主要特点：
 在HTTP连接建立后，需要完成一次“握手”的步骤。
 
 为了实现WebSocket通信，需要用到HTTP的Upgrade首部字段，告知服务器通信协议发生改变，以达到握手的目的。
-![websocket](/images/HTTP图解/9websocket.png)  
+![websocket](/Blog/images/HTTP图解/9websocket.png)  
 
 #### 握手响应
 对于之前的请求，返回状态码101 Switching Protocols的响应。
 
 成功握手确立WebSocket连接后，通信时不再使用HTTP的数据帧，而采用WebSocket独立的数据帧。  
-![WebSocket通信](/images/HTTP图解/9WebSocket通信.png)  
+![WebSocket通信](/Blog/images/HTTP图解/9WebSocket通信.png)  
 
 #### WebSocket API
 ```js
@@ -159,9 +159,9 @@ WebSocket 服务器的实现可以使用Socket.IO。
 ## 4. 期盼已久的HTTP/2.0
 HTTP/2.0的目标是改善用户在使用Web时的速度体验。
 
-![HTTP2](/images/HTTP图解/9HTTP2.png)  
+![HTTP2](/Blog/images/HTTP图解/9HTTP2.png)  
 
 ## 5. Web服务器管理文件的WebDAV
 WebDAV（Web-based Distributed Authoring and Versioning,基于万维网的分布式创作和版本控制）是一个可对Web服务器上的内容直接进行文件复制、编辑等操作的分布式文件系统。
 
-![WebDAV](/images/HTTP图解/9WebDAV.png)  
+![WebDAV](/Blog/images/HTTP图解/9WebDAV.png)  

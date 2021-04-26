@@ -56,5 +56,19 @@ module.exports = {
       }
     }
   },
+  chainWebpack: (config, isServer) => {
+    config.module
+      .rule('images')
+        .test(/\.(png|jpe?g|gif)(\?.*)?$/)
+        .use('url-loader')
+          .loader('url-loader')
+          .options({
+            limit: 10000,
+            name: `public/images/[name].[hash:8].[ext]`,
+            esModule: false
+          })
+      
+    // config.get('file').use.find(item => item.loader === 'file-loader').options.esModule = false
+  },
   plugins: ['@vuepress/back-to-top', '@vuepress/nprogress']
 }

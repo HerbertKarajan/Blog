@@ -57,12 +57,12 @@ webpack主要靠loader来处理各种不同类型的资源。loader本质上就�
 - 生成ES5代码，并作为字符串返回
 
 如果是多个loader依次对资源进行处理：
-![loader](/images/Webpack实战/loader.jpg)
+![loader](/Blog/images/Webpack实战/loader.jpg)
 
 不同loader不需要知道彼此的存在。虽然产出一些冗余步骤，但是这有助于保持loader的独立性和可维护性。
 
 Parcel的资源处理流程：
-![Parcel](/images/Webpack实战/Parcel.jpg)
+![Parcel](/Blog/images/Webpack实战/Parcel.jpg)
 
 ### 零配置
 ```js

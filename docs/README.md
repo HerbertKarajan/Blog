@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /images/home.jpg
+heroImage: /images/home.png
 actionText: 开始学习 →
-actionLink: /blog/
+actionLink: /Blog/
 footer: MIT Licensed | Copyright © 2021-present Karajan's Blog
 ---
